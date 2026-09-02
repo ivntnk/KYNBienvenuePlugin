@@ -1,0 +1,11 @@
+fr\plugin\ivn_tnk\managers\NewPlayerManager.class
+fr\plugin\ivn_tnk\utils\ColorUtils.class
+fr\plugin\ivn_tnk\listeners\PlayerJoinListener$1.class
+fr\plugin\ivn_tnk\managers\NewPlayerManager$1.class
+fr\plugin\ivn_tnk\managers\DataManager$1.class
+fr\plugin\ivn_tnk\managers\DataManager.class
+fr\plugin\ivn_tnk\listeners\PlayerJoinListener.class
+fr\plugin\ivn_tnk\commands\BvnLeaderboardCommand.class
+fr\plugin\ivn_tnk\commands\BvnCommand.class
+fr\plugin\ivn_tnk\BienvenuePlugin.class
+fr\plugin\ivn_tnk\utils\FloodgateUtil.class

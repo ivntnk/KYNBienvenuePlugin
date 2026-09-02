@@ -1,0 +1,52 @@
+# ______ ___ ___ _______
+#|   __ \   |   |    |  |
+#|   __ <   |   |       |         by ivn_tnk - Owner of KYNERA Studio Dev (https://discord.gg/waZrdGaHcp)
+#|______/\_____/|__|____|
+
+# Message sent when a player welcomes a new player
+# {player} = player who executes the command
+# {newplayer} = welcomed new player
+message-bienvenue: "&6[&eSTAR&6] &a{player} &fwelcomes &e{newplayer} &f!"
+
+# Message displayed if the targeted player is no longer considered new
+message-pas-nouveau: "&cThis player is not a new player anymore!"
+
+# Message received by the player who welcomed the new player
+message-recompense: "&6[&eSTAR&6] &fThank you for welcoming &e{newplayer} &f! You have received your reward."
+
+# Command executed to reward the player who welcomed the new player
+# {player} = player who receives the reward
+reward-command: "eco give {player} 50"
+
+# List of commands executed automatically
+# %uuid% = UUID of the concerned player
+execute-command:
+  - "lp user %uuid% parent add gueux"
+
+# Time (in seconds) during which a player is considered new
+# Example: 300 = 5 minutes
+new-player-timeout: 300
+
+# Message sent to the whole server when a new player joins
+# Invites other players to use /bvn
+message-join-nouveau: "&6[&eSTAR&6] &eNew player &f{newplayer} &ehas joined! Use &6/bvn {newplayer} &eto welcome them!"
+
+# ==================================================
+# Ranking of players who welcomed the most new players
+# ==================================================
+
+leaderboard:
+  # Title displayed at the top of the leaderboard
+  title: "&6&l--- TOP WELCOMES ---"
+
+  # Format of each leaderboard entry
+  # {rank} = rank
+  # {player} = player name
+  # {count} = number of welcomes made
+  ligne: "&e#{rank} &f{player} &7- &a{count} welcome(s)"
+
+  # Maximum number of displayed entries
+  nombre-entrees: 10
+
+  # Need help or have a special request? Open a ticket on Discord :)
+  # -> https://discord.gg/waZrdGaHcp

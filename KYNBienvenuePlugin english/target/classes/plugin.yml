@@ -1,0 +1,29 @@
+name: KYNBienvenuePlugin
+version: 1.2.6
+main: fr.plugin.bienvenue.BienvenuePlugin
+api-version: '1.20'
+description: Welcome plugin with rewards and leaderboard
+author: ivn_tnk - KYNERA
+
+softdepend:
+  - floodgate
+
+commands:
+  bvn:
+    description: Welcome a new player
+    usage: /bvn <player>|reload
+    permission: bienvenue.use
+
+  bvnleaderboard:
+    description: Display the welcome leaderboard
+    usage: /bvnleaderboard
+    aliases: [bvnlb, bvntop]
+
+permissions:
+  bienvenue.use:
+    description: Allows the use of /bvn
+    default: true
+
+  bienvenue.admin:
+    description: Access to admin commands
+    default: op

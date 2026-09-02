@@ -1,0 +1,59 @@
+# ______ ___ ___ _______ 
+#|   __ \   |   |    |  |
+#|   __ <   |   |       |         by ivn_tnk - Owner of KYNERA Studio Dev (https://discord.gg/waZrdGaHcp)
+#|______/\_____/|__|____|
+
+# Message envoyé lorsqu'un joueur souhaite la bienvenue
+# {player} = joueur qui exécute la commande
+# {newplayer} = nouveau joueur accueilli
+message-bienvenue: "&6[&eSTAR&6] &a{player} &fsouhaite la bienvenue a &e{newplayer} &f!"
+
+# Message affiché si le joueur ciblé n'est plus considéré comme nouveau
+message-pas-nouveau: "&cCe joueur n'est pas un nouveau joueur !"
+
+# Message reçu par le joueur qui a accueilli le nouveau joueur
+message-recompense: "&6[&eSTAR&6] &fMerci d'avoir accueilli &e{newplayer} &f! Tu as recu ta recompense."
+
+# Commande exécutée pour récompenser le joueur ayant souhaitez la bienvenue
+# {player} = joueur qui reçoit la récompense
+reward-command: "eco give {player} 50"
+
+# Liste des commandes exécutées automatiquement
+# %uuid% = UUID du joueur concerné
+execute-command:
+  - "lp user %uuid% parent add gueux"
+
+# Temps (en secondes) pendant lequel un joueur est considéré comme nouveau
+# Exemple : 300 = 5 minutes
+new-player-timeout: 300
+
+# Message envoyé à tout le serveur lorsqu'un nouveau joueur rejoint
+# Invite les autres joueurs à utiliser /bvn
+message-join-nouveau: "&6[&eSTAR&6] &eNouveau joueur &f{newplayer} &ea rejoint ! Faites &6/bvn {newplayer} &epour l'accueillir !"
+
+# ==================================================
+# Classement des joueurs ayant le plus souhaité
+# la bienvenue aux nouveaux arrivants
+# ==================================================
+
+
+leaderboard:
+  # Titre affiché en haut du classement
+  title: "&6&l--- TOP BIENVENUES ---"
+
+  # Format de chaque ligne du classement
+  # {rank} = position
+  # {player} = nom du joueur
+  # {count} = nombre de bienvenues effectuées
+  ligne: "&e#{rank} &f{player} &7- &a{count} bienvenue(s)"
+
+  # Nombre maximum d'entrées affichées
+  nombre-entrees: 10
+
+  # Besoin d'aide ou d'une demande particulière ? Ouvrez un ticket sur Discord :) -> https://discord.gg/waZrdGaHcp
+
+
+  
+
+
+peut tu me doubler chaque commentaire # par le meme mais en anglais

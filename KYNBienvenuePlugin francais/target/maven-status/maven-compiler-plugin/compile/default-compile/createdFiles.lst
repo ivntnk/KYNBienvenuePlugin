@@ -1,0 +1,11 @@
+fr\plugin\bienvenue\managers\DataManager$1.class
+fr\plugin\bienvenue\managers\NewPlayerManager.class
+fr\plugin\bienvenue\commands\BvnLeaderboardCommand.class
+fr\plugin\bienvenue\BienvenuePlugin.class
+fr\plugin\bienvenue\utils\ColorUtils.class
+fr\plugin\bienvenue\listeners\PlayerJoinListener.class
+fr\plugin\bienvenue\managers\NewPlayerManager$1.class
+fr\plugin\bienvenue\utils\FloodgateUtil.class
+fr\plugin\bienvenue\managers\DataManager.class
+fr\plugin\bienvenue\listeners\PlayerJoinListener$1.class
+fr\plugin\bienvenue\commands\BvnCommand.class
